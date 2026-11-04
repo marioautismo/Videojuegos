@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Videojuegos Singulares</title>
+<meta name="description" content="Videojuegos de Singular Club.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bungee&family=Chivo:wght@400;600;800&display=swap">
+<style>
+:root{--night:#12143A;--night-2:#1B1E52;--pink:#FF4F7E;--sun:#FFC93C;--mint:#4FE3B0;--paper:#FFF4E6;--paper-2:rgba(255,244,230,.72);color-scheme:dark}
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;background:var(--night);color:var(--paper);font-family:'Chivo','Helvetica Neue',Arial,sans-serif}
+main{max-width:760px;margin:0 auto;padding:40px max(16px,env(safe-area-inset-right,0px)) 40px max(16px,env(safe-area-inset-left,0px))}
+.eyebrow{margin:0;font-weight:800;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--sun)}
+h1{margin:6px 0 8px;font-family:'Bungee','Arial Black',Impact,sans-serif;font-weight:400;font-size:clamp(32px,7vw,48px);line-height:1.05;text-shadow:-3px 0 0 var(--pink),3px 2px 0 rgba(79,227,176,.55)}
+.lead{margin:0 0 26px;color:var(--paper-2);font-size:16px}
+.games{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.game{display:flex;align-items:center;gap:18px;padding:18px 20px;border-radius:20px;background:var(--night-2);border:2px solid rgba(255,244,230,.18);text-decoration:none;color:inherit;transition:border-color .15s,transform .15s}
+.game:hover{border-color:var(--pink);transform:translateY(-2px)}
+.game:focus-visible{outline:3px solid var(--sun);outline-offset:3px}
+.game svg{flex:none;width:64px;height:64px}
+.game h2{margin:0 0 4px;font-family:'Bungee','Arial Black',Impact,sans-serif;font-weight:400;font-size:22px}
+.game p{margin:0;color:var(--paper-2);font-size:14.5px;line-height:1.4}
+.play{margin-left:auto;flex:none;font-family:'Bungee','Arial Black',Impact,sans-serif;font-size:15px;padding:10px 18px;border-radius:999px;background:var(--sun);color:var(--night)}
+@media (max-width:520px){.game{flex-wrap:wrap}.play{margin-left:0}}
+footer{margin-top:32px;font-size:12.5px;color:rgba(255,244,230,.5)}
+footer em{color:var(--paper-2)}
+</style>
+</head>
+<body>
+<main>
+  <p class="eyebrow">Singular Club</p>
+  <h1>Videojuegos Singulares</h1>
+  <p class="lead">Elige un juego para empezar.</p>
+  <ul class="games">
+    <li>
+      <a class="game" href="mascara/">
+        <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="30" fill="#2C3290"/><ellipse cx="32" cy="32" rx="17" ry="19" fill="#FFF4E6" stroke="#12143A" stroke-width="2.5"/><ellipse cx="25" cy="28" rx="4.5" ry="2.8" fill="#12143A"/><ellipse cx="39" cy="28" rx="4.5" ry="2.8" fill="#12143A"/><path d="M23 38 Q32 48 41 38" stroke="#FF4F7E" stroke-width="3" fill="none" stroke-linecap="round"/></svg>
+        <div>
+          <h2>Máscara</h2>
+          <p>Corre, salta y decide qué máscara llevar puesta. Cada 1000 m, una reflexión sobre los tres tipos de masking y un escenario nuevo.</p>
+        </div>
+        <span class="play">Jugar</span>
+      </a>
+    </li>
+  </ul>
+  <footer><em>Singular by design</em> · Lo singular, en plural</footer>
+</main>
+</body>
+</html>
